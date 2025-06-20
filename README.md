@@ -17,29 +17,29 @@ rag_chatbot/
 
 
 ├── README.md                                                          # Project documentation
-│
+
 
 ├── /data/                                                             # Original document
 
 │   └── AI_Training_Document.pdf
-│
+
 
 ├── /chunks/                                                           # Chunked text data (pickle format)
 
 │   └── chunks.pkl
-│
+
 
 ├── /vectordb/                                                         # FAISS vector index
 
 │   ├── index.faiss
 
 │   └── chunks.pkl
-│
+
 
 ├── /notebooks/                                                       # Preprocessing notebook
 
 │   └── preprocessing.ipynb
-│
+
 
 ├── /src/                                                             # Core RAG pipeline
 
