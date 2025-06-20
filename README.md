@@ -1,35 +1,55 @@
 # RAG Chatbot Project
+
 SUMMARY 
+
 This project demonstrates the development of an AI-powered chatbot using a Retrieval Augmented Generation (RAG) architecture to answer questions based on a long-form document (AI_Training_Document.pdf). It combines a semantic retriever using FAISS and MiniLM embeddings with a lightweight language model (flan-t5-base) to generate grounded, context-aware responses. The application features a real-time chat interface built using 
 Streamlit. 
 
-
+---
 PROJECT STRUCTURE 
 
 rag_chatbot/
+
 ├── app.py                         # Streamlit chatbot interface
+
 
 ├── requirements.txt               # Python dependencies
 
+
 ├── README.md                      # Project documentation
 │
+
 ├── /data/                         # Original document
+
 │   └── AI_Training_Document.pdf
 │
+
 ├── /chunks/                       # Chunked text data (pickle format)
+
 │   └── chunks.pkl
 │
+
 ├── /vectordb/                     # FAISS vector index
+
 │   ├── index.faiss
+
 │   └── chunks.pkl
 │
+
 ├── /notebooks/                    # Preprocessing notebook
+
 │   └── preprocessing.ipynb
 │
+
 ├── /src/                          # Core RAG pipeline
+
 │   ├── retriever.py               # Loads FAISS & retrieves top-k chunks
+
 │   ├── generator.py               # Loads model & generates answers
+
 │   └── rag_pipeline.py            # Combined retriever + generator logic
+
+---
 
 How to Run Locally
 
