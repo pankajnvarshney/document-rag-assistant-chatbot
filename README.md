@@ -10,44 +10,44 @@ PROJECT STRUCTURE
 
 rag_chatbot/
 
-├── app.py                         # Streamlit chatbot interface
+├── app.py                                                             # Streamlit chatbot interface
 
 
-├── requirements.txt               # Python dependencies
+├── requirements.txt                                                   # Python dependencies
 
 
-├── README.md                      # Project documentation
+├── README.md                                                          # Project documentation
 │
 
-├── /data/                         # Original document
+├── /data/                                                             # Original document
 
 │   └── AI_Training_Document.pdf
 │
 
-├── /chunks/                       # Chunked text data (pickle format)
+├── /chunks/                                                           # Chunked text data (pickle format)
 
 │   └── chunks.pkl
 │
 
-├── /vectordb/                     # FAISS vector index
+├── /vectordb/                                                         # FAISS vector index
 
 │   ├── index.faiss
 
 │   └── chunks.pkl
 │
 
-├── /notebooks/                    # Preprocessing notebook
+├── /notebooks/                                                       # Preprocessing notebook
 
 │   └── preprocessing.ipynb
 │
 
-├── /src/                          # Core RAG pipeline
+├── /src/                                                             # Core RAG pipeline
 
-│   ├── retriever.py               # Loads FAISS & retrieves top-k chunks
+│   ├── retriever.py                                                  # Loads FAISS & retrieves top-k chunks
 
-│   ├── generator.py               # Loads model & generates answers
+│   ├── generator.py                                                  # Loads model & generates answers
 
-│   └── rag_pipeline.py            # Combined retriever + generator logic
+│   └── rag_pipeline.py                                               # Combined retriever + generator logic
 
 ---
 
